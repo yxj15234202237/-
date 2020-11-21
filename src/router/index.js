@@ -23,9 +23,18 @@ const routes = [
   
   {
     path : "/",
+<<<<<<< HEAD
     redirect : "/plxpj"
+=======
+    redirect : "/index"
+  },
+  {
+   path:"/xiao",
+   name:"效果图",
+   component:()=>import('../components/xiaoguotushouye.vue')
+>>>>>>> 3f05f9990c5a6692dfb8a8d173268314edf8e9e4
   }
-];
+]
 
 const router = new VueRouter({
   routes
