@@ -3,6 +3,8 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import smbj from '../components/smbj'
 
+import Falist from '../components/falist.vue'
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -20,6 +22,11 @@ const routes = [
     path: "/smbj",
     name: "smbj",
     component: smbj
+  },
+  {
+    path: "/falist",
+    name: "Falist",
+    component: Falist
   },
   {
     path : "/",

@@ -7,11 +7,11 @@
       <p>装修报价</p>
       <ul>
         <li>
-          <van-icon name="contact" />
+          <i class="iconfont icon-user"></i>
           <p>我的</p>
         </li>
         <li>
-          <van-icon name="comment-o" />
+          <i class="iconfont icon-nav"></i>
           <p>导航</p>
         </li>
       </ul>
@@ -240,7 +240,7 @@ header {
   .zj {
     color: #666666;
     font-size: 13px;
-    margin-top: 18px;
+    // margin-top: 18px;
     .qian1 {
       color: #ff4351;
     }
