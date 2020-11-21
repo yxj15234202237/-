@@ -55,11 +55,45 @@
                     <span>包设计、包材料、包水电、包施工</span>
                 </p>
                 <div>
-                    <p>
-                        <button>换一换</button>
-                        <button>更多设计师</button>
-                    </p>
+                    <div>
+                        <dl>
+                            <dt><img src="" alt=""></dt>
+                            <dd>
+                            <span>
+                                邓建忠
+                            </span>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="" alt=""></dt>
+                            <dd>
+                            <span>
+                                马国辉
+                            </span>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="" alt=""></dt>
+                            <dd>
+                            <span>
+                                杜亚洲
+                            </span>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="" alt=""></dt>
+                            <dd>
+                            <span>
+                                崔钧婷
+                            </span>
+                            </dd>
+                        </dl>
+                    </div>
                 </div>
+                <p>
+                    <button>换一换</button>
+                    <button>更多设计师</button>
+                </p>
             </div>
         </div>
         <footer>
@@ -75,28 +109,22 @@
         data() {
             return {
                 image: [
-                    '/banner.jpg',
-                    'banner1.jpg',
-                    'banner2.jpg',
-                    'banner3.jpg',
-                ],
+                    '/banner.jpg' ,
+                    'banner1.jpg' ,
+                    'banner2.jpg' ,
+                    'banner3.jpg' ,
+                ] ,
                 images: [
-                    'img1.jpg',
-                    'banner3.jpg',
-                ],
+                    'img1.jpg' ,
+                    'banner3.jpg' ,
+                ] ,
             }
-        },
-        // methods: {
-        //     //通用方法，这里直接找到公共图片文件夹
-        //     imgurl (name){
-        //         // 大家根据自己的路径，修改下边的写法
-        //         return require('/'+name);
-        //     }
-        // }
+        } ,
     }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+
     * {
         margin: 0;
         padding: 0;
@@ -104,92 +132,150 @@
         text-decoration: none;
         box-sizing: border-box;
     }
-    $borderColor : #39c894;
-    $spanColor : #eaeaea;
-    $buttonColor : #eed215;
-    .index{
+
+    $borderColor: #39c894;
+    $spanColor: #eaeaea;
+    $buttonColor: #eed215;
+
+    .index {
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
-        header{
+
+        header {
             width: 100%;
             height: 50px;
             padding-top: 7px;
             display: flex;
             justify-content: space-between;
             padding-left: 10px;
-            .logo{
+
+            .logo {
                 width: 30%;
-                img{
+                img {
                     width: 100%;
                 }
             }
         }
-        .content{
+        .content {
             width: 100%;
             flex: 1;
             overflow: auto;
             background-color: $spanColor;
-            &>div{
+
+            & > div {
                 margin: 15px 0;
                 background-color: white;
                 padding: 6px 10px;
             }
         }
     }
-    .van-swipe-item{
+
+    .van-swipe-item {
         width: 100%;
         font-size: 0;
-        &>img{
+
+        & > img {
             height: 160px;
         }
     }
-    .b{
+
+    .b {
         width: 100%;
     }
-    .van-swipe img{
+
+    .van-swipe img {
         width: 100%;
     }
-    .allp{
+
+    .allp {
         display: flex;
         height: 30px;
         line-height: 30px;
         align-items: center;
-        span:nth-of-type(1){
+
+        span:nth-of-type(1) {
             height: 20px;
-            border-right: 2px solid $borderColor ;
+            border-right: 2px solid $borderColor;
             margin-right: 10px;
         }
-        span:nth-of-type(2){
+
+        span:nth-of-type(2) {
             color: $spanColor;
             margin-left: 10PX;
             font-size: 14PX;
         }
     }
+
     .my-swipe .van-swipe-item {
         color: #fff;
         font-size: 20px;
         text-align: center;
         background-color: #39a9ed;
     }
-    .zhuangxiuyuyue{
+
+    .shejishi {
         width: 100%;
-        &>div{
+        & > div {
+            width: 100%;
+            & > div {
+                width: 100%;
+                display: flex;
+                dl {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    dt {
+                        width: 100%;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    dd {
+                        span {
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+            }
+        }
+        &>p:nth-of-type(2){
+            display: flex;
+            button{
+                padding: 4px 0;
+                border: 1px solid #CCCCCC;
+                flex: 1;
+                background-color: white;
+                color: $borderColor;
+            }
+        }
+    }
+
+    .zhuangxiuyuyue {
+        width: 100%;
+
+        & > div {
             padding: 5px 20px 10px 20px;
-            &>p{
+
+            & > p {
                 margin: 10px 0;
-                &>input{
+
+                & > input {
                     width: 100%;
                     padding: 4px 10px;
                     border-radius: 5px;
                 }
-                &>button{
+
+                & > button {
                     width: 100%;
                     background-color: $buttonColor;
                     color: white;
                     border-radius: 5px;
-                    padding: 6px 0 ;
+                    padding: 6px 0;
                     border: none;
                 }
             }
