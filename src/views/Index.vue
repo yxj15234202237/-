@@ -2,8 +2,7 @@
     <div class="index">
         <header>
             <div class="logo">
-                <img src="/common/icon_logo.png" alt="">
-                
+                <img src="logo.png" alt="" @click="zhuan">
             </div>
             <div class="">
 
@@ -12,7 +11,7 @@
         <div class="content"> 
             <div class="b">
                 <van-swipe :autoplay="3000">
-                    <van-swipe-item v-for="(image, index) in images" :key="index">
+                    <van-swipe-item v-for="(image, index) in image" :key="index">
                         <img v-lazy="image" />
                     </van-swipe-item>
                 </van-swipe>
@@ -75,12 +74,23 @@
         components: {} ,
         data() {
             return {
+                image: [
+                    '/banner.jpg',
+                    'banner1.jpg',
+                    'banner2.jpg',
+                    'banner3.jpg',
+                ],
                 images: [
-                    'https://img.yzcdn.cn/vant/apple-1.jpg',
-                    'https://img.yzcdn.cn/vant/apple-2.jpg',
+                    'img1.jpg',
+                    'banner3.jpg',
                 ],
             }
         },
+        methods:{
+            zhuan(){
+                this.$router.push("/gdzb")
+            }
+        }
         // methods: {
         //     //通用方法，这里直接找到公共图片文件夹
         //     imgurl (name){
@@ -101,6 +111,7 @@
     }
     $borderColor : #39c894;
     $spanColor : #eaeaea;
+    $buttonColor : #eed215;
     .index{
         width: 100%;
         height: 100%;
@@ -109,16 +120,34 @@
         header{
             width: 100%;
             height: 50px;
+            padding-top: 7px;
             display: flex;
             justify-content: space-between;
+            padding-left: 10px;
             .logo{
                 width: 30%;
+                img{
+                    width: 100%;
+                }
             }
         }
         .content{
             width: 100%;
             flex: 1;
             overflow: auto;
+            background-color: $spanColor;
+            &>div{
+                margin: 15px 0;
+                background-color: white;
+                padding: 6px 10px;
+            }
+        }
+    }
+    .van-swipe-item{
+        width: 100%;
+        font-size: 0;
+        &>img{
+            height: 160px;
         }
     }
     .b{
@@ -131,7 +160,6 @@
         display: flex;
         height: 30px;
         line-height: 30px;
-        padding-left: 20px;
         align-items: center;
         span:nth-of-type(1){
             height: 20px;
@@ -142,6 +170,34 @@
             color: $spanColor;
             margin-left: 10PX;
             font-size: 14PX;
+        }
+    }
+    .my-swipe .van-swipe-item {
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+        background-color: #39a9ed;
+    }
+    .zhuangxiuyuyue{
+        width: 100%;
+        &>div{
+            padding: 5px 20px 10px 20px;
+            &>p{
+                margin: 10px 0;
+                &>input{
+                    width: 100%;
+                    padding: 4px 10px;
+                    border-radius: 5px;
+                }
+                &>button{
+                    width: 100%;
+                    background-color: $buttonColor;
+                    color: white;
+                    border-radius: 5px;
+                    padding: 6px 0 ;
+                    border: none;
+                }
+            }
         }
     }
 </style>
