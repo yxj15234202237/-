@@ -2,13 +2,14 @@
     <div class="index">
         <header>
             <div class="logo">
-                <img src="../../public/common/icon_logo.png" alt="">
+                <img src="/common/icon_logo.png" alt="">
+                
             </div>
             <div class="">
 
             </div>
         </header>
-        <div class="content">
+        <div class="content"> 
             <div class="b">
                 <van-swipe :autoplay="3000">
                     <van-swipe-item v-for="(image, index) in images" :key="index">
