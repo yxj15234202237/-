@@ -51,7 +51,7 @@
             <div class="shejishi">
                 <p class="allp">
                     <span></span>
-                    设计师
+                    <router-link to="/falist">设计师</router-link>
                     <span>包设计、包材料、包水电、包施工</span>
                 </p>
                 <div>
