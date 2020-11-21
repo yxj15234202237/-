@@ -1,5 +1,6 @@
 <template>
   <div class="box">
+  <!--头部-->
     <header>
       <div class="heaader_left">
       <img src="/logo.png" alt="">
@@ -10,6 +11,14 @@
         <van-grid-item icon="wap-nav" text="导航" />
       </van-grid>
     </header>
+    <!--导航-->
+    <ul>
+       <li>
+       <span>216516</span>
+       <van-icon name="arrow-up" />
+       </li>
+     
+    </ul>
   </div>
 </template>
 
@@ -24,11 +33,23 @@ export default {};
   & > header {
     width: 100%;
     height: 100px;
-    display:flex;
+    display: flex;
     justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #999;
     & > .header_left {
-      width: 40%;
+      width: 30%;
+      & > img {
+        width: 100%;
+      }
     }
+    & > h1 {
+      font-weight: 100;
+    }
+  }
+  ul{
+    width: 100%;
+    height: 100px;
   }
 }
 </style>

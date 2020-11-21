@@ -18,8 +18,13 @@ const routes = [
   {
     path : "/",
     redirect : "/index"
+  },
+  {
+   path:"/xiao",
+   name:"效果图",
+   component:()=>import('../components/xiaoguotushouye.vue')
   }
-];
+]
 
 const router = new VueRouter({
   routes
