@@ -16,8 +16,14 @@ const routes = [
     component: () => import("../views/Index")
   },
   {
+    path: "/plxpj",
+    name: "plxpj",
+    component: () => import("../components/plxpj")
+  },
+  
+  {
     path : "/",
-    redirect : "/index"
+    redirect : "/plxpj"
   }
 ];
 
