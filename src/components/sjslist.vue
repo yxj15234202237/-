@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div  @click="$router.push('/index')">
         设计师列表
     </div>
 </template>
