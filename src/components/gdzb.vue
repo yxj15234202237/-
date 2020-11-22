@@ -1,7 +1,7 @@
 <template>
   <div class="dyzbox">
     <header class="dyzheader">
-      <img src="/logo.png" alt class="logo" />
+      <img src="/logo.png" alt class="logo" @click="$router.push('/index')" />
       <p class="dyz-gdzb">工地直播</p>
       <ul class="dyz-uls">
         <li>
@@ -112,7 +112,7 @@
           </p>
         </dd>
       </dl>
-      <van-pagination v-model="currentPage" :page-count="12" mode="simple" />
+      <van-pagination v-model="currentPage" :page-count="3" mode="simple" />
       <section class="dyzfoot">
         <p>
           <i class="iconfont icon-hot-line"></i>
@@ -135,7 +135,9 @@ export default {
   name: "",
   components: {},
   data() {
-    return {};
+    return {
+      currentPage:1
+    };
   }
 };
 </script>

@@ -1,6 +1,6 @@
 <template>
-    <div>
-
+    <div  @click="$router.push('/index')">
+        装修攻略
     </div>
 </template>
 

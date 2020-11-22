@@ -52,8 +52,28 @@ const routes = [
   {
     path:"/gdzb",
     name:"gdzb",
-    component:()=>import('../components/gdzb.vue ')
-  }
+    component:()=>import('../components/gdzb.vue')
+  },
+  {
+    path:"/sjslist",
+    name:"sjslist",
+    component:()=>import('../components/sjslist.vue')
+  },
+  {
+    path:"/zxgl",
+    name:"zxgl",
+    component:()=>import('../components/zhuangxiugonglue.vue')
+  },
+  {
+    path:"/mfyy",
+    name:"mfyy",
+    component:()=>import('../components/mfyy.vue')
+  },
+  {
+    path:"/zxdk",
+    name:"zxdk",
+    component:()=>import('../components/zxdk.vue')
+  },
 ]
 
 const router = new VueRouter({

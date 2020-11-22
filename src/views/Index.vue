@@ -17,9 +17,58 @@
                 </van-swipe>
             </div>
             <div class="div">
-                <van-grid :column-num="4">
-                    <van-grid-item v-for="value in 8" :key="value" icon="photo-o" text="文字" />
-                </van-grid>
+                <router-link to="/falist" tag="dl">
+                    <dt>
+                        <img src="/common/images/2_03.jpg" alt="">
+                    </dt>
+                    <dd>
+                        装修方案
+                    </dd>
+                </router-link>
+                <router-link to="/xiao" tag="dl">
+                    <dt><img src="/common/images/2_05.jpg" alt=""></dt>
+                    <dd>
+                        效果图
+                    </dd>
+                </router-link>
+                <router-link to="/sjslist" tag="dl">
+                    <dt><img src="/common/images/2_07.jpg" alt=""></dt>
+                    <dd>
+                        设计师
+                    </dd>
+                </router-link>
+                <router-link to="/gdzb" tag="dl">
+                    <dt><img src="/common/images/2_09.jpg" alt=""></dt>
+                    <dd>
+                        工地直播
+                    </dd>
+                </router-link>
+                <router-link to="/zxgl" tag="dl">
+                    <dt>
+                        <img src="/common/images/2_15.jpg" alt="">
+                    </dt>
+                    <dd>
+                        装修攻略
+                    </dd>
+                </router-link>
+                <router-link to="/zxdk" tag="dl">
+                    <dt><img src="/common/images/2_16.jpg" alt=""></dt>
+                    <dd>
+                        装修贷款
+                    </dd>
+                </router-link>
+                <router-link to="/mfyy" tag="dl">
+                    <dt><img src="/common/images/2_17.jpg" alt=""></dt>
+                    <dd>
+                        免费预约
+                    </dd>
+                </router-link>
+                <router-link to="/smbj" tag="dl">
+                    <dt><img src="/common/images/2_18.jpg" alt=""></dt>
+                    <dd>
+                        十秒报价
+                    </dd>
+                </router-link>
             </div>
             <div class="zhuangxiu">
                 <p class="allp">
@@ -298,6 +347,24 @@
                 width: 30%;
                 img {
                     width: 100%;
+                }
+            }
+        }
+        .div{
+            width:100%;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            dl{
+                width:25%;
+                text-align: center;
+                padding:10px 0;
+                dt{
+                    width:50%;
+                    margin: 0 auto;
+                    img{
+                        width:100%;
+                    }
                 }
             }
         }

@@ -2,7 +2,7 @@
   <div>
     <header>
       <p class="p1">
-        <img src="/logo.png" alt />
+        <img src="/logo.png" alt  @click="$router.push('/index')"/>
       </p>
       <p>装修报价</p>
       <ul>

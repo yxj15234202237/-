@@ -1,7 +1,7 @@
 <template>
   <div class="faxq">
     <header class="header">
-      <img src="/logo.png" alt class="logo" />
+      <img src="/logo.png" alt class="logo" @click="$router.push('/index')" />
       <p class="cjt-zxfa">装修方案</p>
       <ul class="cjt-uls">
         <li>
@@ -62,7 +62,7 @@
               <img src="/spex-03.jpg" alt />
             </div>
           </van-tab>
-          <van-tab title="配置清单"></van-tab>
+          <van-tab title="配置清单" to="/faxqpz"></van-tab>
           <van-tab title="施工工艺"></van-tab>
           <van-tab title="服务流程"></van-tab>
         </van-tabs>

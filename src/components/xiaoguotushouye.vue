@@ -3,7 +3,7 @@
     <!--头部-->
     <header>
       <div class="heaader_left">
-        <img src="/logo.png" alt="" />
+        <img src="/logo.png" alt=""  @click="$router.push('/index')"/>
       </div>
       <h1>效果图</h1>
       <van-grid>
