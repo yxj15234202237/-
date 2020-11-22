@@ -41,26 +41,25 @@ const routes = [
     component: Faxqpz
   },
   {
-    path : "/",
-    redirect : "/index"
+    path: "/",
+    redirect: "/index"
   },
   {
-   path:"/xiao",
-   name:"效果图",
-   component:()=>import('../components/xiaoguotushouye.vue')
+    path: "/xiao",
+    name: "效果图",
+    component: () => import('../components/xiaoguotushouye.vue')
   },
   {
-<<<<<<< HEAD
-   path:"/xiang",
-   name:"图片详情页",
-   component:()=>import('../components/tupianxiangqingye.vue')
+    path: "/xiang",
+    name: "图片详情页",
+    component: () => import('../components/tupianxiangqingye.vue')
   },
-=======
-    path:"/gdzb",
-    name:"gdzb",
-    component:()=>import('../components/gdzb.vue')
+  {
+    path: "/gdzb",
+    name: "gdzb",
+    component: () => import('../components/gdzb.vue')
   }
->>>>>>> 6c736171300106dd95174631a12853531fc2d727
+
 ]
 
 const router = new VueRouter({
