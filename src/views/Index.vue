@@ -254,7 +254,6 @@
             }
         }
     }
-
     .zhuangxiuyuyue {
         width: 100%;
 
