@@ -121,7 +121,7 @@
             <li>触屏版</li>
             <li>电脑版</li>
             <li>关于我们</li>
-            <li>联系我们</li>
+            <li>联系我们 </li>
           </ul>
           <p>2016  sirfang.com  刚需房装修就找房先森</p>
       </section>
