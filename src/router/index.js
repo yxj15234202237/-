@@ -58,6 +58,11 @@ const routes = [
     path: "/gdzb",
     name: "gdzb",
     component: () => import('../components/gdzb.vue')
+  },
+  {
+    path:"/wenxiang",
+    name:"文章详情页",
+    component:()=>import('../components/wzyxq.vue')
   }
 
 ]
