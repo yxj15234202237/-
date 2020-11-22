@@ -51,7 +51,7 @@
             <div class="shejishi">
                 <p class="allp">
                     <span></span>
-                    <router-link to="/faxq">设计师</router-link>
+                    设计师
                     <span>包设计、包材料、包水电、包施工</span>
                 </p>
                 <div>
