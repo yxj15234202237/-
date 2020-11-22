@@ -1,7 +1,11 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
+import smbj from '../components/smbj'
+
 import Falist from '../components/falist.vue'
+import Faxq from '../components/faxq.vue'
+import Faxqpz from '../components/faxqpz.vue'
 
 Vue.use(VueRouter);
 
@@ -17,9 +21,24 @@ const routes = [
     component: () => import("../views/Index"),
   },
   {
+    path: "/smbj",
+    name: "smbj",
+    component: smbj
+  },
+  {
     path: "/falist",
     name: "Falist",
     component: Falist
+  },
+  {
+    path: "/faxq",
+    name: "Faxq",
+    component: Faxq
+  },
+  {
+    path: "/faxqpz",
+    name: "Fazqpz",
+    component: Faxqpz
   },
   {
     path : "/",

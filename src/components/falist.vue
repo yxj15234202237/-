@@ -113,17 +113,19 @@ body,.falist {
   flex-direction: column;
 }
 .header {
+  position: relative;
   width: 100%;
   height: 60px;
   display: flex;
-  justify-content: space-between;
-  padding: 0 4px;
+  text-align: center;
   align-items: center;
   background: #ffffff;
 }
 .header > .logo {
   height: 70%;
   width: 128px;
+  position: absolute;
+  left: 4px;
 }
 .header > .cjt-zxfa {
   font-size: 20px;
@@ -132,6 +134,8 @@ body,.falist {
 .header > .cjt-uls {
   display: flex;
   list-style: none;
+  position: absolute;
+  right: 4px;
 }
 .header > .cjt-uls li {
   text-align: center;
@@ -215,7 +219,7 @@ body,.falist {
   color: #666;
 }
 .cjt-phone {
-  padding: 10px 0 70px 0px;
+  padding: 10px 0 76px 0px;
   background: #fff;
   width: 100%;
   .phone {
@@ -239,7 +243,7 @@ body,.falist {
     }
   }
 }
-footer{
+falist footer{
     position: relative;
     width: 100%;
     height: 70px;
