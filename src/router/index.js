@@ -45,7 +45,7 @@ const routes = [
     redirect: "/index"
   },
   {
-    ath: "/xiao",
+    path: "/xiao",
     name: "效果图",
     component: () => import('../components/xiaoguotushouye.vue')
   },
