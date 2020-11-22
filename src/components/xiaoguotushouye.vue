@@ -138,8 +138,8 @@ export default {};
     justify-content: space-around;
     align-items: center;
     border-bottom: 1px solid #999;
-    & > .header_left {
-      width: 30%;
+    & > .heaader_left {
+      width: 40%;
       & > img {
         width: 100%;
       }
