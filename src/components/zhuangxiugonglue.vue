@@ -1,5 +1,5 @@
 <template>
-  <div class="zxgl">
+  <div class="zxgl" @click="$router.push('/index')">
     <!-- 头部+搜索 -->
     <div class="headerSearch">
       <div>

@@ -1,7 +1,7 @@
 <template>
   <div class="falist">
     <header class="header">
-      <img src="/logo.png" alt class="logo" />
+      <img src="/logo.png" alt class="logo" @click="$router.push('/index')"/>
       <p class="cjt-zxfa">装修方案</p>
       <ul class="cjt-uls">
         <li>
@@ -38,7 +38,7 @@
       <div class="cjt-content">
         <div class="cjt-bananer">
           <p class="cjt-jbzx">全屋装修</p>
-          <img src="/case/case1.jpg" alt />
+          <img src="/case/case1.jpg" alt @click="$router.push('/faxq')"/>
           <div class="cjt-ban">
             <ul class="cjt-uls2">
               <li class="cjt-lis1">
@@ -57,7 +57,7 @@
       </div>
       <div class="cjt-nr">
         <p>
-          房先森互联网家装有别于传统装修公司与其他装修中
+          ——————房先森互联网家装有别于传统装修公司与其他装修中
           介平台,以自营模式整合设计师与项目经理,杜绝项目转
           ,包外包,利用互联网将工地进行在线全景直播,通过去中
           间环节,提供装修套餐+个性化定制服务
@@ -243,7 +243,7 @@ body,.falist {
     }
   }
 }
-falist footer{
+.falist footer{
     position: relative;
     width: 100%;
     height: 70px;

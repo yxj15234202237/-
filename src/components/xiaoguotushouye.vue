@@ -3,7 +3,7 @@
     <!--头部-->
     <header>
       <div class="heaader_left">
-        <img src="/logo.png" alt="" />
+        <img src="/logo.png" alt=""  @click="$router.push('/index')"/>
       </div>
       <h1>效果图</h1>
       <van-grid>
@@ -138,8 +138,8 @@ export default {};
     justify-content: space-around;
     align-items: center;
     border-bottom: 1px solid #999;
-    & > .header_left {
-      width: 30%;
+    & > .heaader_left {
+      width: 40%;
       & > img {
         width: 100%;
       }

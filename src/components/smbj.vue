@@ -2,7 +2,7 @@
   <div>
     <header>
       <p class="p1">
-        <img src="/logo.png" alt />
+        <img src="/logo.png" alt  @click="$router.push('/index')"/>
       </p>
       <p>装修报价</p>
       <ul>
@@ -79,11 +79,94 @@
           <p class="xian"></p>
         </section>
         <div class="dd">
-            <dl>
-                <dt></dt>
-                <dd></dd>
-            </dl>
+          <dl>
+            <dt>
+              <p class="ic1">
+                <i class="iconfont icon-app"></i>
+              </p>
+            </dt>
+            <dd>
+              <p class="hxl-cp">产品系列</p>
+              <p class="hxl-qb">半包、全包套餐、全屋定制及个性化升级</p>
+            </dd>
+          </dl>
+          <dl>
+            <dt>
+              <p class="ic1">
+                <i class="iconfont icon-price"></i>
+              </p>
+            </dt>
+            <dd>
+              <p class="hxl-cp">0元装修</p>
+              <p class="hxl-qb">与建行合作装修贷款，实现0元开启装修</p>
+            </dd>
+          </dl>
+          <dl class="hxl-zb">
+            <dt>
+              <p class="ic1">
+                <i class="iconfont icon-live"></i>
+              </p>
+            </dt>
+            <dd>
+              <p class="hxl-cp">工地直播</p>
+              <p class="hxl-qb">工地巡检照片、360度全景节点验收</p>
+            </dd>
+          </dl>
+          <dl class="d3">
+            <dt>
+              <p class="ic1">
+                <i class="iconfont icon-preferential"></i>
+              </p>
+            </dt>
+            <dd>
+              <p class="hxl-cp">合作优惠</p>
+              <p class="hxl-qb">正品材料工厂直供，F2C让利用户</p>
+            </dd>
+          </dl>
+          <dl class="d3">
+            <dt>
+              <p class="ic1">
+                <i class="iconfont icon-construction-site"></i>
+              </p>
+            </dt>
+            <dd>
+              <p class="hxl-cp">参观工地</p>
+              <p class="hxl-qb">随时预约参观工地，零距离感受施工工艺</p>
+            </dd>
+          </dl>
+          <dl class="d3 hxl-zb">
+            <dt>
+              <p class="ic1">
+                <i class="iconfont icon-protection"></i>
+              </p>
+            </dt>
+            <dd>
+              <p class="hxl-cp">售后保障</p>
+              <p class="hxl-qb">整装2年质保，隐蔽水电工程10年质保</p>
+            </dd>
+          </dl>
         </div>
+      </div>
+      <div class="hxl-box4">
+        &nbsp;房先森互联网家装有别于传统装修公司与其他装修中
+        介平台，以自营模式整合设计师与项目经理，杜绝项目转
+        包外包，利用互联网将工地进行在线全景直播，通过去中
+        间环节，提供装修套餐+个性化定制服务。
+      </div>
+      <div class="hxl-box5">
+        <p>
+          <i class="iconfont icon-hot-line"></i>
+          服务热线：400-9977-658
+        </p>
+        <ul>
+          <li>触屏版</li>
+          <li>电脑版</li>
+          <li>关于我们</li>
+          <li>联系我们</li>
+        </ul>
+      </div>
+      <div class="hxl-box6">
+        &copy;2016 sirfang.com 刚需房专修就找房先森
       </div>
     </div>
   </div>
@@ -237,6 +320,8 @@ header {
   text-align: center;
   border: 1px dashed #37c993;
   border-top: 0;
+  padding-top: 15px;
+  transform: translate(0, -6%);
   .zj {
     color: #666666;
     font-size: 13px;
@@ -269,7 +354,7 @@ header {
   }
 }
 .box3 {
-  padding: 0 9px;
+  padding: 0 5px;
   background: #fff;
   margin-bottom: 9px;
   padding-bottom: 12px;
@@ -278,16 +363,16 @@ header {
     align-items: center;
     padding: 18px 0;
   }
-  .tu{
-      display: inline-block;
+  .tu {
+    display: inline-block;
     margin: 0 13px;
     width: 37px;
     height: 13px;
     background: url(/common/icon_title.png);
     background-size: 100% 100%;
   }
-  .xian{
-      width: 147px;
+  .xian {
+    width: 147px;
     border-top: 1px solid #eaeaea;
   }
   .wm {
@@ -295,5 +380,84 @@ header {
     text-align: center;
     padding-top: 18px;
   }
+}
+.dd {
+  padding-bottom: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  dl {
+    width: 33%;
+    text-align: center;
+    padding: 8px 0 13px 0;
+    border-right: 1px solid #eaeaea;
+    dt {
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .ic1 {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: #37c993;
+        line-height: 50px;
+        i {
+          font-size: 30px;
+          color: #fff;
+        }
+      }
+    }
+    .hxl-cp {
+      font-size: 14px;
+    }
+    .hxl-qb {
+      color: #666;
+      font-size: 12px;
+    }
+    .d3 {
+      border-top: 1px solid;
+    }
+  }
+  .hxl-zb {
+    border-right: none;
+  }
+  .d3 {
+    border-top: 1px solid #eaeaea;
+  }
+}
+.hxl-box4{
+  background: #fff;
+  font-size: 14px;
+  padding: 10px;
+  // text-align: center;
+}
+.hxl-box5{
+  margin-top: 10px;
+  background: #fff;
+  text-align: center;
+  border-bottom: 1px solid #eaeaea;
+  padding: 12px 0;
+  i{
+    color: #37c993;
+  }
+  ul{
+    display: flex;
+    margin-top: 10px;
+    li{
+      flex: 1;
+      border-right: 1px solid #eaeaea;
+      text-align: center;
+    }
+    li:hover{
+      color: #37c993;
+    }
+  }
+}
+.hxl-box6{
+  text-align: center;
+  background: #fff;
+  padding: 10px 0;
+  color: #999;
 }
 </style>

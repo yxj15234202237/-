@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div  @click="$router.push('/index')">
         工地详情页
     </div>
 </template>
