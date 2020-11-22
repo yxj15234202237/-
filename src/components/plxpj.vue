@@ -92,4 +92,8 @@ header {
   align-items: center;
   text-align: center;
 }
+.con{
+  width: 100%;
+  height: 40%;
+}
 </style>
