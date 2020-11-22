@@ -48,7 +48,12 @@ const routes = [
    path:"/xiao",
    name:"效果图",
    component:()=>import('../components/xiaoguotushouye.vue')
-  }
+  },
+  {
+   path:"/xiang",
+   name:"图片详情页",
+   component:()=>import('../components/tupianxiangqingye.vue')
+  },
 ]
 
 const router = new VueRouter({
