@@ -48,6 +48,11 @@ const routes = [
    path:"/xiao",
    name:"效果图",
    component:()=>import('../components/xiaoguotushouye.vue')
+  },
+  {
+   path:"/zxgl",
+   name:"裝修攻略",
+   component:()=>import('../components/zhuangxiugonglue.vue')
   }
 ]
 
