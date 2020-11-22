@@ -52,7 +52,7 @@ const routes = [
   {
     path:"/gdzb",
     name:"gdzb",
-    component:()=>import('../components/gdzb.vue')
+    component:()=>import('../components/gdzb.vue ')
   }
 ]
 
