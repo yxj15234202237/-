@@ -18,7 +18,7 @@ const routes = [
   {
     path: "/index",
     name: "Index",
-    component: () => import("../views/Index")
+    component: () => import("../views/Index"),
   },
   {
     path: "/smbj",
@@ -48,6 +48,11 @@ const routes = [
    path:"/xiao",
    name:"效果图",
    component:()=>import('../components/xiaoguotushouye.vue')
+  },
+  {
+    path:"/gdzb",
+    name:"gdzb",
+    component:()=>import('../components/gdzb.vue')
   }
 ]
 
