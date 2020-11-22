@@ -4,6 +4,8 @@ import Home from "../views/Home.vue";
 import smbj from '../components/smbj'
 
 import Falist from '../components/falist.vue'
+import Faxq from '../components/faxq.vue'
+import Faxqpz from '../components/faxqpz.vue'
 
 Vue.use(VueRouter);
 
@@ -27,6 +29,16 @@ const routes = [
     path: "/falist",
     name: "Falist",
     component: Falist
+  },
+  {
+    path: "/faxq",
+    name: "Faxq",
+    component: Faxq
+  },
+  {
+    path: "/faxqpz",
+    name: "Fazqpz",
+    component: Faxqpz
   },
   {
     path : "/",
