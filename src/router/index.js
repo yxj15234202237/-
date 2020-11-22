@@ -18,7 +18,7 @@ const routes = [
   {
     path: "/index",
     name: "Index",
-    component: () => import("../views/Index")
+    component: () => import("../views/Index"),
   },
   {
     path: "/smbj",
@@ -50,10 +50,17 @@ const routes = [
    component:()=>import('../components/xiaoguotushouye.vue')
   },
   {
+<<<<<<< HEAD
    path:"/xiang",
    name:"图片详情页",
    component:()=>import('../components/tupianxiangqingye.vue')
   },
+=======
+    path:"/gdzb",
+    name:"gdzb",
+    component:()=>import('../components/gdzb.vue')
+  }
+>>>>>>> 6c736171300106dd95174631a12853531fc2d727
 ]
 
 const router = new VueRouter({
