@@ -110,7 +110,10 @@
       <div class="hxl-bottom">
         <p class="hxl-vs"></p>
       </div>
+    <div  @click="$router.push('/index')">
+        装修贷款
     </div>
+  </div>
   </div>
 </template>
 

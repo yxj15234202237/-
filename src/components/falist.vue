@@ -1,7 +1,7 @@
 <template>
   <div class="falist">
     <header class="header">
-      <img src="/logo.png" alt class="logo" />
+      <img src="/logo.png" alt class="logo" @click="$router.push('/index')"/>
       <p class="cjt-zxfa">装修方案</p>
       <ul class="cjt-uls">
         <li>
@@ -38,7 +38,7 @@
       <div class="cjt-content">
         <div class="cjt-bananer">
           <p class="cjt-jbzx">全屋装修</p>
-          <img src="/case/case1.jpg" alt />
+          <img src="/case/case1.jpg" alt @click="$router.push('/faxq')"/>
           <div class="cjt-ban">
             <ul class="cjt-uls2">
               <li class="cjt-lis1">

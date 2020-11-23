@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div  @click="$router.push('/index')">
         装修流程
     </div>
 </template>

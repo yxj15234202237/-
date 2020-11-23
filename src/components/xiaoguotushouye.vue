@@ -3,7 +3,7 @@
     <!--头部-->
     <header>
       <div class="heaader_left">
-        <img src="/logo.png" alt="" />
+        <img src="/logo.png" alt=""  @click="$router.push('/index')"/>
       </div>
       <h1>效果图</h1>
       <van-grid>
@@ -28,7 +28,7 @@
       <li>
         <i
           class="iconfont icon-search"
-          style="color: #39c894; fontSize: 26px"
+          style="color: #39c894; fontSize: 25px"
         ></i>
       </li>
     </ul>
@@ -133,13 +133,14 @@ export default {};
   //头部
   & > header {
     width: 100%;
-    height: 100px;
+    height: 90px;
+    background-color: #fff;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border-bottom: 1px solid #999;
-    & > .header_left {
-      width: 30%;
+    & > .heaader_left {
+      width: 35%;
       & > img {
         width: 100%;
       }
