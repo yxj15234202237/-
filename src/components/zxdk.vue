@@ -2,7 +2,7 @@
   <div class="hxl-big">
     <header>
       <p class="p1">
-        <img src="/logo.png" alt />
+        <img src="/logo.png" alt   @click="$router.push('/index')"/>
       </p>
       <p>装修贷款</p>
       <ul>
@@ -110,9 +110,6 @@
       <div class="hxl-bottom">
         <p class="hxl-vs"></p>
       </div>
-    <div  @click="$router.push('/index')">
-        装修贷款
-    </div>
   </div>
   </div>
 </template>
