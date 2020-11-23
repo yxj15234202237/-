@@ -1,12 +1,13 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import smbj from '../components/smbj'
+import zxdk from '../components/zxdk'
 
 import Falist from '../components/falist.vue'
 import Faxq from '../components/faxq.vue'
 import Faxqpz from '../components/faxqpz.vue'
 
+import smbj from '../components/smbj'
 Vue.use(VueRouter);
 
 const routes = [
@@ -21,9 +22,9 @@ const routes = [
     component: () => import("../views/Index"),
   },
   {
-    path: "/smbj",
-    name: "smbj",
-    component: smbj
+    path: "/zxdk",
+    name: "zxdk",
+    component: zxdk
   },
   {
     path: "/falist",
@@ -53,7 +54,12 @@ const routes = [
     path:"/gdzb",
     name:"gdzb",
     component:()=>import('../components/gdzb.vue')
-  }
+  },
+  {
+    path: "/smbj",
+    name: "smbj",
+    component: smbj
+  },
 ]
 
 const router = new VueRouter({
