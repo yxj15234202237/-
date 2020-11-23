@@ -118,6 +118,11 @@ const routes = [
     name: '装修攻略',
     component: () => import('../components/zhuangxiugonglue.vue'),
   },
+  {
+    path: '/pl',
+    name: 'pl',
+    component: () => import('../components/pl.vue'),
+  },
 ]
 
 
