@@ -1,12 +1,16 @@
 <template>
-  <div class="zxgl" @click="$router.push('/index')">
+  <div class="zxgl" >
+    
     <!-- 头部+搜索 -->
     <div class="headerSearch">
-      <div>
+      <div v-if="flag">
         <img src="../../public/erweima.jpg" alt="" />
         <img src="../../public/关注.png" alt="" />
         <p><span>关注房先森官方微信公众号</span><span>srifang_com</span></p>
-        <span>X</span>
+        <span @click="close">X</span>
+      </div>
+      <div v-if="!flag">
+        <img src="/logo.png" alt="" id="tu" @click="$router.push('/index')">
       </div>
       <p>
         <input type="text" name="" id="" placeholder="请输入关键字" />
@@ -15,7 +19,7 @@
     </div>
     <!-- 导航 -->
     <div class="nav">
-      <van-tabs v-model="active" color="#39c893">
+      <van-tabs color="#39c893">
         <van-tab title="装修前">
           <div>
             <dl>
@@ -233,8 +237,15 @@ export default {
   name: "zhuangxiugonglue",
   components: {},
   data() {
-    return {};
+    return {
+      flag:true
+    };
   },
+  methods:{
+    close(){
+      this.flag=false
+    }
+  }
 };
 </script>
 
@@ -258,6 +269,10 @@ body,
 // @function rem($num) {
 //   @return $num/100;
 // }
+#tu{
+  width:120px;
+  margin-left:10px;
+}
 .zxgl {
   //   头部 + 搜索
   & > .headerSearch {
