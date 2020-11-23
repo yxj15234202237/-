@@ -4,7 +4,7 @@
       <p class="p1">
         <img src="/logo.png" alt />
       </p>
-      <p>装修报价</p>
+      <p>装修贷款</p>
       <ul>
         <li>
           <i class="iconfont icon-user"></i>
