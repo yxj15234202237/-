@@ -2,9 +2,18 @@
   <div class="index">
     <header>
       <div class="logo">
-        <img src="logo.png" alt="" @click="zhuan" />
+        <img src="logo.png"/>
       </div>
-      <div class=""></div>
+      <ul class="dyz-uls">
+        <li>
+          <i class="iconfont icon-user"></i>
+          <p>我的</p>
+        </li>
+        <li>
+          <i class="iconfont icon-nav"></i>
+          <p>导航</p>
+        </li>
+      </ul>
     </header>
     <div class="content">
       <div class="b">
@@ -252,9 +261,6 @@ export default {
     };
   },
   methods: {
-    zhuan() {
-      this.$router.push("/gdzb");
-    },
   },
   // methods: {
   //     //通用方法，这里直接找到公共图片文件夹
@@ -290,11 +296,15 @@ $buttonColor: #eed215;
     display: flex;
     justify-content: space-between;
     padding-left: 10px;
-
     .logo {
       width: 30%;
       img {
         width: 100%;
+      }
+    }
+    &>ul{
+      &>li{
+        margin: 0 6px;
       }
     }
   }
